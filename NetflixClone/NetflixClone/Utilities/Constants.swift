@@ -13,6 +13,8 @@ struct AppImage {
   static let searchIcon = UIImage(systemName: "magnifyingglass")
   static let downloadIcon = UIImage(systemName: "arrow.down.to.line")
   static let heroImage = UIImage(named: "heroImage")
+  static let profileButton = UIImage(systemName: "person")
+  static let playBarButton = UIImage(systemName: "play.rectangle")
 }
 
 struct AppString {
