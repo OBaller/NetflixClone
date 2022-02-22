@@ -12,6 +12,7 @@ struct AppImage {
   static let upcomingIcon = UIImage(systemName: "play.circle")
   static let searchIcon = UIImage(systemName: "magnifyingglass")
   static let downloadIcon = UIImage(systemName: "arrow.down.to.line")
+  static let heroImage = UIImage(named: "heroImage")
 }
 
 struct AppString {
@@ -19,4 +20,5 @@ struct AppString {
   static let upcomingTabBarTitle = "Coming Soon"
   static let searchTabBarTitle = "Top Searches"
   static let downloadTabBarTitle = "Download"
+  static let playButtonTitle = "Play"
 }
