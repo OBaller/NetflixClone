@@ -23,4 +23,9 @@ struct AppString {
   static let searchTabBarTitle = "Top Searches"
   static let downloadTabBarTitle = "Download"
   static let playButtonTitle = "Play"
+  static let trendingMovies = "TRENDING MOVIES"
+  static let trendingTV = "TRENDING TV"
+  static let upcomingMovies = "UPCOMING MOVIES"
+  static let topRated = "TOP RATED"
+  static let popular = "POPULAR"
 }

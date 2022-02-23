@@ -46,7 +46,7 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-    cell.backgroundColor = .systemPink
+    cell.backgroundColor = .green
     return cell
   }
 }

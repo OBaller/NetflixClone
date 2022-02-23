@@ -2,7 +2,7 @@
 //  DownloadsViewController.swift
 //  NetflixClone
 //
-//  Created by IBE on 22/02/2022.
+//  Created by naseem on 22/02/2022.
 //
 
 import UIKit
