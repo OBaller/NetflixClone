@@ -31,7 +31,7 @@ class APICaller {
         let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
         completion(.success(results.results))
       } catch {
-        completion(.failure(error))
+        completion(.failure(APIError.failedToGetData))
       }
     }
     task.resume()
@@ -49,7 +49,7 @@ class APICaller {
         let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
         completion(.success(results.results))
       } catch {
-        completion(.failure(error))
+        completion(.failure(APIError.failedToGetData))
       }
     }
     task.resume()
@@ -67,7 +67,7 @@ class APICaller {
         let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
         completion(.success(results.results))
       } catch {
-        completion(.failure(error))
+        completion(.failure(APIError.failedToGetData))
       }
     }
     task.resume()
@@ -83,7 +83,7 @@ class APICaller {
         let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
         completion(.success(results.results))
       } catch {
-        completion(.failure(error))
+        completion(.failure(APIError.failedToGetData))
       }
     }
     task.resume()
@@ -99,7 +99,7 @@ class APICaller {
         let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
         completion(.success(results.results))
       } catch {
-        completion(.failure(error))
+        completion(.failure(APIError.failedToGetData))
       }
     }
     task.resume()
