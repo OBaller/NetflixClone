@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
   
-  let sectionTitles: [String] = [AppString.trendingMovies, AppString.popular, AppString.trendingTV, AppString.upcomingMovies, AppString.topRated]
+  let sectionTitles: [String] = [AppString.trendingMovies, AppString.trendingTV, AppString.popular, AppString.upcomingMovies, AppString.topRated]
   
   private var homeFeedTable: UITableView = {
     let table = UITableView(frame: .zero, style: .grouped)
@@ -27,8 +27,11 @@ class HomeViewController: UIViewController {
     let headerView = HeroHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
     homeFeedTable.tableHeaderView = headerView
     
-    getTrendingMovies()
-
+//    getTrendingMovies()
+//    getTrendingTv()
+//    getUpcomingMovies()
+//    getPopularMovies()
+    getTopRated()
   }
   
   private func configureNavBar() {
@@ -60,6 +63,49 @@ class HomeViewController: UIViewController {
     }
   }
   
+  private func getTrendingTv() {
+    APICaller.shared.getTrendingTv { results in
+      switch results {
+        case .success(let tvSeries):
+          print(tvSeries)
+        case .failure(let error):
+          print(error)
+      }
+    }
+  }
+  
+  private func getUpcomingMovies() {
+    APICaller.shared.getUpcomingMovies { results in
+      switch results {
+        case .success(let upcomingMovies):
+          print(upcomingMovies)
+        case.failure(let error):
+          print(error)
+      }
+    }
+  }
+  
+  private func getPopularMovies() {
+    APICaller.shared.getPopularMovies { results in
+      switch results {
+        case .success(let popularMovies):
+          print(popularMovies)
+        case .failure(let error):
+          print(error)
+      }
+    }
+  }
+  
+  func getTopRated() {
+    APICaller.shared.getTopRated { results in
+      switch results {
+        case .success(let topMovies):
+          print(topMovies)
+        case .failure(let error):
+          print(error)
+      }
+    }
+  }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -91,6 +137,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     header.textLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
     header.textLabel?.frame = CGRect(x: header.bounds.origin.x + 20, y: header.bounds.origin.y, width: 100, height: header.bounds.height)
     header.textLabel?.textColor = .white
+    header.textLabel?.text = header.textLabel?.text?.capitalizeFirstLetter()
   }
   
   
