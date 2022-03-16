@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B41602DF27E244FD00A07052 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41602DE27E244FD00A07052 /* SearchResultViewController.swift */; };
 		B46CB2D827C3955000293105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB2D727C3955000293105 /* AppDelegate.swift */; };
 		B46CB2DA27C3955000293105 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB2D927C3955000293105 /* SceneDelegate.swift */; };
 		B46CB2DC27C3955000293105 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB2DB27C3955000293105 /* MainTabBarViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B41602DE27E244FD00A07052 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		B46CB2D427C3955000293105 /* NetflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46CB2D727C3955000293105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B46CB2D927C3955000293105 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				B4C50BE227C5016F008B3EA4 /* UpcomingViewController.swift */,
 				B4C50BE427C501B1008B3EA4 /* SearchViewController.swift */,
 				B4C50BE627C501E5008B3EA4 /* DownloadsViewController.swift */,
+				B41602DE27E244FD00A07052 /* SearchResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				B48365DF27C6F42000514AE2 /* TitleTableViewCell.swift in Sources */,
 				B4C50BE327C5016F008B3EA4 /* UpcomingViewController.swift in Sources */,
 				B46DF0BE27C5B5D9004FB466 /* APICaller.swift in Sources */,
+				B41602DF27E244FD00A07052 /* SearchResultViewController.swift in Sources */,
 				B48365E127C6F9E200514AE2 /* TitleViewModel.swift in Sources */,
 				B4C50BE127C50132008B3EA4 /* HomeViewController.swift in Sources */,
 				B4C50BEA27C50500008B3EA4 /* Constants.swift in Sources */,
