@@ -85,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				B4C50BEF27C52C49008B3EA4 /* Managers */,
-				B4C50BEE27C52C3D008B3EA4 /* Resources */,
 				B4C50BDF27C5010F008B3EA4 /* Controllers */,
 				B4C50BED27C52B2F008B3EA4 /* Models */,
 				B4C50BEB27C52B16008B3EA4 /* Views */,
@@ -146,13 +145,6 @@
 				B46DF0BF27C5C50B004FB466 /* Title.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		B4C50BEE27C52C3D008B3EA4 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		B4C50BEF27C52C49008B3EA4 /* Managers */ = {
