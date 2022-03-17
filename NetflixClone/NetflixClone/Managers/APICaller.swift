@@ -10,6 +10,8 @@ import Foundation
 struct Endpoint {
   static let API_KEY =  "d9a29091441a054435c322a9bacabaa2"
   static let baseURL = "https://api.themoviedb.org"
+  static let youtubeAPI_KEY = "AIzaSyCYyM61pd-4zYdTT_DdTWmgkktc0NR6T5Q"
+  static let youtubeBaseURL = "https://youtube.googleapis.com/youtube/v3/search?"
 }
 
 enum APIError: Error {
@@ -136,6 +138,24 @@ class APICaller {
         completion(.success(results.results))
       } catch {
         completion(.failure(APIError.failedToGetData))
+      }
+    }
+    task.resume()
+  }
+  
+  func getMovie(with query: String) {
+    guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
+    guard let url = URL(string: "\(Endpoint.youtubeBaseURL)q=\(query)&key=\(Endpoint.youtubeAPI_KEY)") else { return }
+    
+    let task = URLSession.shared.dataTask(with: url) { data, _, error in
+      guard let data = data, error == nil else {
+        return
+      }
+      do {
+        let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
+        print(results)
+      } catch {
+        print(error.localizedDescription)
       }
     }
     task.resume()

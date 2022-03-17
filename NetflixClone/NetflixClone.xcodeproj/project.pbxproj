@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B41602DF27E244FD00A07052 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41602DE27E244FD00A07052 /* SearchResultViewController.swift */; };
+		B41602E127E3604D00A07052 /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41602E027E3604D00A07052 /* YoutubeSearchResponse.swift */; };
 		B46CB2D827C3955000293105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB2D727C3955000293105 /* AppDelegate.swift */; };
 		B46CB2DA27C3955000293105 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB2D927C3955000293105 /* SceneDelegate.swift */; };
 		B46CB2DC27C3955000293105 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CB2DB27C3955000293105 /* MainTabBarViewController.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		B41602DE27E244FD00A07052 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		B41602E027E3604D00A07052 /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
 		B46CB2D427C3955000293105 /* NetflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46CB2D727C3955000293105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B46CB2D927C3955000293105 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				B46DF0BF27C5C50B004FB466 /* Title.swift */,
+				B41602E027E3604D00A07052 /* YoutubeSearchResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				B48365D427C65DDE00514AE2 /* Extensions.swift in Sources */,
 				B48365DF27C6F42000514AE2 /* TitleTableViewCell.swift in Sources */,
 				B4C50BE327C5016F008B3EA4 /* UpcomingViewController.swift in Sources */,
+				B41602E127E3604D00A07052 /* YoutubeSearchResponse.swift in Sources */,
 				B46DF0BE27C5B5D9004FB466 /* APICaller.swift in Sources */,
 				B41602DF27E244FD00A07052 /* SearchResultViewController.swift in Sources */,
 				B48365E127C6F9E200514AE2 /* TitleViewModel.swift in Sources */,
