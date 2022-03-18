@@ -153,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				B48365E027C6F9E200514AE2 /* TitleViewModel.swift */,
+				B40622D427E37DAB00F520FC /* TitlePreviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -162,7 +163,6 @@
 			children = (
 				B46DF0BF27C5C50B004FB466 /* Title.swift */,
 				B41602E027E3604D00A07052 /* YoutubeSearchResponse.swift */,
-				B40622D427E37DAB00F520FC /* TitlePreviewViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
