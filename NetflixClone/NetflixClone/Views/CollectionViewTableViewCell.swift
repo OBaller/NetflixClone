@@ -52,6 +52,10 @@ class CollectionViewTableViewCell: UITableViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
+  func downloadTitleAt(indexPath: IndexPath) {
+    
+  }
+  
 }
 
 extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -98,9 +102,9 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
   func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
     let config = UIContextMenuConfiguration(
       identifier: nil,
-      previewProvider: nil) { _ in
+      previewProvider: nil) { [weak self] _ in
         let downloadAction = UIAction(title: "Download", subtitle: nil, image: nil, identifier: nil, discoverabilityTitle: nil, state: .off) { _ in
-          print("Download Tapped")
+          self?.downloadTitleAt(indexPath: indexPath)
         }
         return UIMenu(title: "", image: nil, identifier: nil, options: .displayInline, children: [downloadAction])
       }
