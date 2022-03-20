@@ -49,8 +49,14 @@ Using Notification Center to update ViewControllers
 ### SEARCH VIEW
 <img width="282" alt="Color Scheme" src="https://user-images.githubusercontent.com/60821645/159155095-74ad0786-6dc7-4489-a81e-513c5bda5cfa.png">
 
-### WEBVIEW: VIDEO
+### WEBVIEW: IMAGE
 <img width="282" alt="Color Scheme" src="https://user-images.githubusercontent.com/60821645/159155296-162aa4fd-2ac0-4f2e-b309-553cfbbf69dc.png">
+
+### APP VIDEO
+
+https://user-images.githubusercontent.com/60821645/159155895-c47a0b87-d3a3-4900-83c1-e20205794e86.mov
+
+
 
 
 
